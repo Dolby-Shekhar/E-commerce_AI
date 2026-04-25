@@ -1,0 +1,154 @@
+.orders-page {
+  padding: 24px 0;
+}
+
+.orders-page h1 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  padding: 20px;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.order-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-id {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.order-date {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.order-status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.order-items {
+  margin-bottom: 16px;
+}
+
+.order-item-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.order-item-row:last-child {
+  border-bottom: none;
+}
+
+.order-item-row img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.order-item-info {
+  flex: 1;
+}
+
+.order-item-info p {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.order-item-info span {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.order-item-price {
+  font-weight: 600;
+}
+
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.shipping-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-medium);
+  font-size: 14px;
+}
+
+.order-total {
+  font-size: 16px;
+}
+
+.order-total strong {
+  color: var(--text-dark);
+  font-size: 18px;
+}
+
+.empty-orders {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.empty-orders i {
+  font-size: 64px;
+  color: var(--border);
+  margin-bottom: 20px;
+}
+
+.empty-orders h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.empty-orders p {
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .order-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: ecommerce-fullstack
+    runtime: node
+    buildCommand: npm install && cd frontend && npm install && npm run build
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        value: mongodb+srv://Dolby:Dolby2871@cluster0.cmpavar.mongodb.net/ecommerce?retryWrites=true&w=majority&appName=Cluster0
+      - key: JWT_SECRET
+        generateValue: true
+      - key: FRONTEND_URL
+        value: https://ecommerce-fullstack.onrender.com
+      - key: ADMIN_EMAIL
+        value: admin@eshop.com
+      - key: ADMIN_PASSWORD
+        generateValue: true
