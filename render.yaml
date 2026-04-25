@@ -14,7 +14,7 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: FRONTEND_URL
-        value: https://ecommerce-fullstack.onrender.com
+        value: https://e-commerce-ai-8rqp.onrender.com
       - key: ADMIN_EMAIL
         value: admin@eshop.com
       - key: ADMIN_PASSWORD
